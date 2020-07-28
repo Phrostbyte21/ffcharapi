@@ -15,8 +15,15 @@
         <ul class="card" id='ffchars'></ul>
     </div>
     <div style="display: flex; justify-content: center;">
-        <button id="addCard">Add Another Card</button>
+        <button id="addCard" onclick="addedFunction()")>Add Another Card</button>
     </div>
 </body>
+
+<script>
+    function addedFunction() {
+      document.getElementById("addCard").innerHTML = "Added!";
+    }
+</script>
+
 <script type="module" src="main.js"></script>
 </html>
