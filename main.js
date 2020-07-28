@@ -14,9 +14,17 @@ fetch(url)
     .then(resp => resp.json())
     .then(data => {
         chars = data.results;
-        console.log(chars)
-
+        console.log(chars);
         
+        chars.map(char => {
+            console.log(char.name)
+        })
+
+        let li = createNode('li'),
+            img = createNode('img'),
+            span = createNode('span');
+
+        img.src = 
     })
 
 
