@@ -6,7 +6,7 @@ function append(parent, el) {
     return parent.appendChild(el);
 }
 
-const url = 'https://www.moogleapi.com/api/v1/characters/?results=10';
+const url = 'https://randomuser.me/api/?results=10';
 const ul = document.getElementById('ffchars');
 
 let authors;
@@ -17,14 +17,14 @@ fetch(url)
         authors = data.results;
         console.log(authors)
         
-        authors.map(char => {
-            console.log(char.name)
+        authors.map(author => {
+            console.log(author.name.first)
             let li = createNode('li'),
                 img = createNode('img'),
                 span = createNode('span');
 
-            img.src = char.picture;
-            span.innerText = `${char.name}`;
+            img.src = author.picture;
+            span.innerText = `${author.name}`;
 
             append(li, img);
             append(li, span);
