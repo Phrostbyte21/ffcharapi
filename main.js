@@ -10,7 +10,7 @@ function first(array, count = 25) {
     return array.slice(0, count);
 }
 
-const url = 'https://www.moogleapi.com/api/v1/characters/?results=10';
+const url = 'https://www.moogleapi.com/api/v1/characters/';
 const ul = document.getElementById('ffchars');
 
 document.getElementById('ffchars').className = "card cardFlip";
