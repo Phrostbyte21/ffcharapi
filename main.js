@@ -6,7 +6,7 @@ function append(parent, el) {
     return parent.appendChild(el);
 }
 
-const url = 'https://pokeapi.co/api/v2/pokemon/?results=10';
+const url = 'https://randomuser.me/api/?results=10';
 const ul = document.getElementById('ffchars');
 
 let chars;
@@ -24,7 +24,7 @@ fetch(url)
                 span = createNode('span');
 
             img.src = char.pictures.url;
-            span.innerText = `${char.name}`;
+            span.innerText = `${char.name.first}`;
 
             append(li, img);
             append(li, span);
