@@ -22,7 +22,6 @@ fetch(url)
             let li = createNode('li'),
                 span = createNode('span');
 
-            img.src = author.picture.large;
             span.innerText = `${author.name.first}`;
 
             append(li, span);
