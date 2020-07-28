@@ -10,6 +10,7 @@ const url = 'https://www.moogleapi.com/api/v1/characters/';
 const ul = document.getElementById('ffchars');
 
 let ffchars;
+let char;
 
 fetch(url)
     .then(resp => resp.json())
