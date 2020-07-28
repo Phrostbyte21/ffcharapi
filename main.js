@@ -22,12 +22,7 @@ fetch(url)
             let li = createNode('li'),
                 span = createNode('span');
 
-            li.innerText = `Name: ${author.name} \n Gender: ${author.gender}`;
-
-            span.innerText = `Name: ${author.name}`;
-            span.innerText = `Gender: ${author.gender}`;
-            span.innerText = `Job: ${author.job}`;
-            span.innerText = `Race: ${author.race}`;
+            span.innerText = `Name: ${author.name} \nGender: ${author.gender} \nJob: ${author.job} \nRace: ${author.race}`;
 
             append(li, span);
             append(ul, li);
