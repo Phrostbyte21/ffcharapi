@@ -89,3 +89,8 @@ button:hover {
     background-color: white;
     transition: .3s;
 }
+
+button:focus {
+    outline: none;
+    background-color: blue;
+}
