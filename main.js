@@ -18,13 +18,13 @@ fetch(url)
         console.log(chars)
         
         chars.map(char => {
-            console.log(char.forms.name)
+            console.log(char.name)
             let li = createNode('li'),
                 img = createNode('img'),
                 span = createNode('span');
 
             img.src = char.pictures.url;
-            span.innerText = `${char.forms.name}`;
+            span.innerText = `${char.name}`;
 
             append(li, img);
             append(li, span);
