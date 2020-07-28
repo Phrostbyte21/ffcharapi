@@ -92,5 +92,6 @@ button:hover {
 
 button:focus {
     outline: none;
-    background-color: blue;
+    box-shadow: 0px 0px 4px white;
+    transition: .2s;
 }
