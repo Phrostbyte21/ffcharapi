@@ -16,7 +16,6 @@ fetch(url)
     .then(data => {
         ffchars = data.results;
         console.log(ffchars)
-        console.log(char)
         
         ffchars.map(char => {
             console.log(char.name)
