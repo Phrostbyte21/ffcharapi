@@ -26,10 +26,13 @@ fetch(url)
         first(authors).map(author => {
             console.log(author.name)
             let li = createNode('li'),
+                img = createNode('img'),
                 span = createNode('span');
 
+            img.src = author.pictures.url;
             span.innerText = `Name: ${author.name} \nGender: ${author.gender} \nJob: ${author.job} \nRace: ${author.race}`;
 
+            append(li, img);
             append(li, span);
             append(ul, li);
         })
