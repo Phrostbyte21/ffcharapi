@@ -6,25 +6,25 @@ function append(parent, el) {
     return parent.appendChild(el);
 }
 
-const url = 'https://www.moogleapi.com/api/v1/characters';
+const url = 'https://pokeapi.co/api/v2/pokemon/?results=10';
 const ul = document.getElementById('ffchars');
 
-let authors;
+let chars;
 
 fetch(url)
     .then(resp => resp.json())
     .then(data => {
-        authors = data.results;
-        console.log(authors)
+        chars = data.results;
+        console.log(chars)
         
-        authors.map(author => {
-            console.log(author.name)
+        chars.map(char => {
+            console.log(char.forms.name)
             let li = createNode('li'),
                 img = createNode('img'),
                 span = createNode('span');
 
-            img.src = author.pictures.url;
-            span.innerText = `${author.name}`;
+            img.src = char.pictures.url;
+            span.innerText = `${char.forms.name}`;
 
             append(li, img);
             append(li, span);
