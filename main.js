@@ -18,13 +18,13 @@ fetch(url)
         console.log(authors)
         
         authors.map(author => {
-            console.log(author.name.first)
+            console.log(author.name)
             let li = createNode('li'),
                 img = createNode('img'),
                 span = createNode('span');
 
             img.src = author.picture.medium;
-            span.innerText = `${author.name}`;
+            span.innerText = `${author.name.first} ${author.name.last}`;
 
             append(li, img);
             append(li, span);
