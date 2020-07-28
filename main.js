@@ -29,7 +29,7 @@ fetch(url)
                 img = createNode('img'),
                 span = createNode('span');
 
-            img.src = author.pictures.url;
+            img.src = author.pictures.primary;
             span.innerText = `Name: ${author.name} \nGender: ${author.gender} \nJob: ${author.job} \nRace: ${author.race}`;
 
             append(li, img);
