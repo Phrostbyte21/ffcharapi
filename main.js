@@ -9,20 +9,20 @@ function append(parent, el) {
 const url = 'https://randomuser.me/api/?results=30';
 const ul = document.getElementById('ffchars');
 
-let AAA;
+let authors;
 
 fetch(url)
     .then(resp => resp.json())
     .then(data => {
-        AAA = data.results;
-        console.log(AAA)
+        authors = data.results;
+        console.log(authors)
         
-        AAA.map(bbb => {
-            console.log(bbb.name)
+        authors.map(author => {
+            console.log(author.name)
             let li = createNode('li'),
                 span = createNode('span');
 
-            span.innerText = `${bbb.name.first} ${bbb.name.last}`;
+            span.innerText = `${author.name.first} ${author.name.last}`;
 
             append(li, span);
             append(ul, li);
