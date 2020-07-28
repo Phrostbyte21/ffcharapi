@@ -47,7 +47,7 @@ body ul li img {
 }
 
 .card li{
-    color: blue;
+    background-color: blue;
     backface-visibility: hidden;
 }
 
@@ -57,5 +57,5 @@ body ul li img {
 }
 
 .cardFlip li {
-    color: black;
+    background-color: black;
 }
