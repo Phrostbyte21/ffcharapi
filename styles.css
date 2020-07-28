@@ -47,15 +47,22 @@ body ul li img {
 }
 
 .card li{
-    background-color: blue;
+    background-image: url("https://i.imgur.com/je8QTyH.jpg");
+    background-position: center;
+    background-size: cover;
+    backface-visibility: hidden;
+    transition: 1s;
+}
+.card li span {
     backface-visibility: hidden;
 }
 
 .card li:hover {
+    background-color: black;
     transform: rotateY( 180deg );
-    transition: transform 0.5s;
+    transition: .5s;
 }
 
 .cardFlip li {
-    background-color: black;
+    
 }
