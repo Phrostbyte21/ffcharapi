@@ -6,7 +6,7 @@ function append(parent, el) {
     return parent.appendChild(el);
 }
 
-const url = 'https://www.moogleapi.com/api/v1/characters/?results=10';
+const url = 'https://www.moogleapi.com/api/v1/characters';
 const ul = document.getElementById('ffchars');
 
 let authors;
