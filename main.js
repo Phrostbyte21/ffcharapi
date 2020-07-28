@@ -9,15 +9,15 @@ function append(parent, el) {
 const url = 'https://www.moogleapi.com/api/v1/characters/';
 const ul = document.getElementById('ffchars');
 
-let ffchars;
+let ffcharas;
 
 fetch(url)
     .then(resp => resp.json())
     .then(data => {
-        ffchars = data.results;
-        console.log(ffchars)
+        ffcharas = data.results;
+        // console.log(ffcharas)
         
-        ffchars.map(char => {
+        ffcharas.map(char => {
             console.log(char.name)
             let li = createNode('li'),
                 span = createNode('span');
