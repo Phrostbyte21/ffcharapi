@@ -19,6 +19,9 @@ body ul li {
     flex-direction: column;
     margin-bottom: 20px;
     align-items: center;
+    background-color: white;
+    margin: 10px 5px;
+    padding: 50px 5px;
 }
 
 body ul li span {
@@ -37,4 +40,9 @@ body ul li img {
     color: white;
     border-bottom: 1px solid #afafaf;
     background: linear-gradient(180deg, rgba(9,66,121,1) 0%, rgba(0,143,255,1) 100%);
+}
+
+.card:hover {
+    transform: rotateY( 180deg );
+    transition: transform 0.5s;
 }
