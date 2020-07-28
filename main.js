@@ -6,7 +6,7 @@ function append(parent, el) {
     return parent.appendChild(el);
 }
 
-const url = 'https://randomuser.me/api/?results=30';
+const url = 'https://www.moogleapi.com/api/v1/characters/?results=30';
 const ul = document.getElementById('ffchars');
 
 let authors;
@@ -22,7 +22,7 @@ fetch(url)
             let li = createNode('li'),
                 span = createNode('span');
 
-            span.innerText = `${author.name.first} ${author.name.last}`;
+            span.innerText = `${author.name} ${author.name}`;
 
             append(li, span);
             append(ul, li);
