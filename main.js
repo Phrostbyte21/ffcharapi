@@ -9,6 +9,8 @@ function append(parent, el) {
 const url = 'https://www.moogleapi.com/api/v1/characters/?results=30';
 const ul = document.getElementById('ffchars');
 
+document.getElementById('ffchars').className = "cards";
+
 let authors;
 
 fetch(url)
