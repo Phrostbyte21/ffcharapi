@@ -16,13 +16,15 @@ fetch(url)
     .then(data => {
         ffchars = data.results;
         console.log(ffchars)
+        console.log(char)
         
-        ffchars.map(character => {
-            console.log(character.name)
+        ffchars.map(char => {
+            console.log(char.name)
+            console.log(char.character.name)
             let li = createNode('li'),
                 span = createNode('span');
 
-            span.innerText = `${character.character.name}`;
+            span.innerText = `${char.character.name} ${char.character.origin}`;
 
             append(li, span);
             append(ul, li);
