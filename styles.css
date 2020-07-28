@@ -46,7 +46,7 @@ body ul li img {
     background: linear-gradient(180deg, rgba(9,66,121,1) 0%, rgba(0,143,255,1) 100%);
 }
 
-.card {
+.card li{
     color: blue;
     backface-visibility: hidden;
 }
@@ -56,6 +56,6 @@ body ul li img {
     transition: transform 0.5s;
 }
 
-.cardFlip {
+.cardFlip li {
     color: black;
 }
