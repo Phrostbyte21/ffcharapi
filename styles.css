@@ -11,10 +11,11 @@ body ul {
     align-items: flex-start;
     justify-content: center;
     flex-basis: 80%;
+    padding-left: 0px;
 }
 
 body ul li {
-    flex-basis: 15%;
+    /* flex-basis: 15%; */
     display: flex;
     flex-direction: column;
     margin-bottom: 20px;
@@ -25,7 +26,8 @@ body ul li {
     border: 0px solid black;
     border-radius: 5px;
     transition: transform 1s;
-    height: 175px;
+    width: 150px;
+    height: 300px;
 }
 
 body ul li span {
@@ -50,7 +52,6 @@ body ul li img {
     background-image: url("https://i.imgur.com/je8QTyH.jpg");
     background-position: center;
     background-size: cover;
-    backface-visibility: hidden;
     transition: 1s;
 }
 .card li span {
@@ -59,7 +60,7 @@ body ul li img {
     height: 100%;
     transition: 1s;
     opacity: 0;
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: rgba(255, 255, 255, 0.5);
     border: 0px solid black;
     border-radius: 5px;
 }
