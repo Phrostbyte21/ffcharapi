@@ -54,7 +54,6 @@ body ul li img {
     transition: 1s;
 }
 .card li span {
-    transform: rotateY( 180deg );
     backface-visibility: hidden;
     width: 100%;
     height: 100%;
@@ -62,9 +61,7 @@ body ul li img {
 
 .card li span:hover {
     transform: rotateY( 180deg );
-    backface-visibility: hidden;
-    width: 100%;
-    height: 100%;
+    transition: .5s;
 }
 
 .card li:hover {
