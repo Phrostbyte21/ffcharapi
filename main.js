@@ -9,22 +9,22 @@ function append(parent, el) {
 const url = 'https://randomuser.me/api/?results=10';
 const ul = document.getElementById('ffchars');
 
-let chars;
+let authors;
 
 fetch(url)
     .then(resp => resp.json())
     .then(data => {
-        chars = data.results;
-        console.log(chars)
+        authors = data.results;
+        console.log(authors)
         
-        chars.map(char => {
-            console.log(char.name)
+        authors.map(author => {
+            console.log(author.name)
             let li = createNode('li'),
                 img = createNode('img'),
                 span = createNode('span');
 
-            img.src = char.pictures.url;
-            span.innerText = `${char.name.first}`;
+            img.src = author.picture.medium;
+            span.innerText = `${author.name.first} ${author.name.last}`;
 
             append(li, img);
             append(li, span);
