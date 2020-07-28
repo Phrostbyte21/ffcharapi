@@ -6,6 +6,47 @@ function append(parent, el) {
     return parent.appendChild(el);
 }
 
+const url = 'https://www.moogleapi.com/api/v1/characters/?results=10';
+const ul = document.getElementById('ffchars');
+
+let authors;
+
+fetch(url)
+    .then(resp => resp.json())
+    .then(data => {
+        authors = data.results;
+        console.log(authors)
+        
+        authors.map(author => {
+            console.log(author.name)
+            let li = createNode('li'),
+                img = createNode('img'),
+                span = createNode('span');
+
+            img.src = author.pictures.url;
+            span.innerText = `${author.name}`;
+
+            append(li, img);
+            append(li, span);
+            append(ul, li);
+        })
+
+    })
+
+
+
+
+
+//Working Baseball Card Assignment Code
+/*
+function createNode(element) {
+    return document.createElement(element);
+}
+
+function append(parent, el) {
+    return parent.appendChild(el);
+}
+
 const url = 'https://randomuser.me/api/?results=10';
 const ul = document.getElementById('ffchars');
 
@@ -32,43 +73,9 @@ fetch(url)
         })
 
     })
-
-
-
-
-
-
-/*
-//Baseball Project Code
-function createNode(element) {
-    return document.createElement(element);
-}
-
-function append(parent, el) {
-    return parent.appendChild(el);
-}
-
-const ffchar = document.getElementById('ffchar');
-
-const url = 'https://www.moogleapi.com/api/v1/characters/?results=10';
-
-let ffchars;
-
-fetch(url)
-    .then(resp => resp.json())
-    .then(data => {
-        ffchars = data.results;
-        console.log(ffchars)
-
-        ffchars.map(ffchar => {
-            console.log(ffchar.name.last)
-        })
-
-        let li = createNode('li'),
-            img = createNode('img'),
-            span = createNode('span');
-    })
 */
+
+
 
 /*
 //Star Wars Addition (for reference ONLY)
