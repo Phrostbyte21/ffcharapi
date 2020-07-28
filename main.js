@@ -23,7 +23,7 @@ fetch(url)
                 img = createNode('img'),
                 span = createNode('span');
 
-            img.src = author.picture.medium;
+            img.src = author.picture.large;
             span.innerText = `${author.name.first} ${author.name.last}`;
 
             append(li, img);
