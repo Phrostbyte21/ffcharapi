@@ -6,7 +6,7 @@ function append(parent, el) {
     return parent.appendChild(el);
 }
 
-const url = 'https://randomuser.me/api/?results=30';
+const url = 'https://www.moogleapi.com/api/v1/characters/?results=30';
 const ul = document.getElementById('ffchars');
 
 let authors;
@@ -20,13 +20,11 @@ fetch(url)
         authors.map(author => {
             console.log(author.name)
             let li = createNode('li'),
-                img = createNode('img'),
                 span = createNode('span');
 
             img.src = author.picture.large;
-            span.innerText = `${author.name.first} ${author.name.last}`;
+            span.innerText = `${author.name.first}`;
 
-            append(li, img);
             append(li, span);
             append(ul, li);
         })
@@ -47,7 +45,7 @@ function append(parent, el) {
     return parent.appendChild(el);
 }
 
-const url = 'https://randomuser.me/api/?results=10';
+const url = 'https://randomuser.me/api/?results=30';
 const ul = document.getElementById('ffchars');
 
 let authors;
@@ -64,7 +62,7 @@ fetch(url)
                 img = createNode('img'),
                 span = createNode('span');
 
-            img.src = author.picture.medium;
+            img.src = author.picture.large;
             span.innerText = `${author.name.first} ${author.name.last}`;
 
             append(li, img);
