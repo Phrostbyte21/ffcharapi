@@ -1,5 +1,6 @@
 function createNode(element) {
     return document.createElement(element);
+    element.classList.add("cardFlip");
 }
 
 function append(parent, el) {
