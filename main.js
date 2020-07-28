@@ -14,7 +14,7 @@ let authors;
 fetch(url)
     .then(resp => resp.json())
     .then(data => {
-        authors = data.results;
+        authors = data;
         console.log(authors)
         
         authors.map(author => {
