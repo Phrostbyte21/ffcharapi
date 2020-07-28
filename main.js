@@ -6,23 +6,23 @@ function append(parent, el) {
     return parent.appendChild(el);
 }
 
-const url = 'https://www.moogleapi.com/api/v1/characters/?results=30';
+const url = 'https://www.moogleapi.com/api/v1/characters/';
 const ul = document.getElementById('ffchars');
 
-let authors;
+let ffchars;
 
 fetch(url)
     .then(resp => resp.json())
     .then(data => {
-        authors = data.results;
-        console.log(authors)
+        ffchars = data.results;
+        console.log(ffchars)
         
-        authors.map(author => {
-            console.log(author.name)
+        ffchars.map(character => {
+            console.log(character.name)
             let li = createNode('li'),
                 span = createNode('span');
 
-            span.innerText = `${author.gender}`;
+            span.innerText = `${character.character.name}`;
 
             append(li, span);
             append(ul, li);
