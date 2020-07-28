@@ -10,7 +10,6 @@ const url = 'https://www.moogleapi.com/api/v1/characters/';
 const ul = document.getElementById('ffchars');
 
 let ffchars;
-let char;
 
 fetch(url)
     .then(resp => resp.json())
@@ -20,11 +19,10 @@ fetch(url)
         
         ffchars.map(char => {
             console.log(char.name)
-            console.log(char.character.name)
             let li = createNode('li'),
                 span = createNode('span');
 
-            span.innerText = `${char.character.name} ${char.character.origin}`;
+            span.innerText = `${char.name} ${char.origin}`;
 
             append(li, span);
             append(ul, li);
