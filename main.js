@@ -1,3 +1,25 @@
+function createNode(element) {
+    return document.createElement(element);
+}
+
+function append(parent, el) {
+    return parent.appendChild(el);
+}
+
+const url = 'https://www.moogleapi.com/api/v1/characters/?results=10';
+
+fetch(url)
+    .then(resp => resp.json())
+    .then(data => {
+        console.log(data);
+    })
+
+
+
+
+
+
+/*
 //Baseball Project Code
 function createNode(element) {
     return document.createElement(element);
@@ -27,7 +49,7 @@ fetch(url)
             img = createNode('img'),
             span = createNode('span');
     })
-
+*/
 
 /*
 //Star Wars Addition (for reference ONLY)
