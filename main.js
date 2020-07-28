@@ -6,7 +6,7 @@ function append(parent, el) {
     return parent.appendChild(el);
 }
 
-const url = 'https://randomuser.me/api/?results=10';
+const url = 'https://randomuser.me/api/?results=30';
 const ul = document.getElementById('ffchars');
 
 let authors;
