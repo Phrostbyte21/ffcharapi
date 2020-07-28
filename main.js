@@ -6,6 +6,10 @@ function append(parent, el) {
     return parent.appendChild(el);
 }
 
+function first(array, count = 10) {
+    return array.slice(0, count);
+}
+
 const url = 'https://www.moogleapi.com/api/v1/characters/?results=10';
 const ul = document.getElementById('ffchars');
 
@@ -19,7 +23,7 @@ fetch(url)
         authors = data;
         console.log(authors)
         
-        authors.map(author => {
+        first(authors).map(author => {
             console.log(author.name)
             let li = createNode('li'),
                 span = createNode('span');
