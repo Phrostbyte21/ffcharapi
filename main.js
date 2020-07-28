@@ -7,6 +7,7 @@ function append(parent, el) {
 }
 
 const url = 'https://www.moogleapi.com/api/v1/characters/?results=10';
+const ul = document.getElementById('ffchars');
 
 let chars;
 
@@ -18,13 +19,18 @@ fetch(url)
         
         chars.map(char => {
             console.log(char.name)
+            let li = createNode('li'),
+                img = createNode('img'),
+                span = createNode('span');
+
+            img.src = char.picture;
+            span.innerText = `${char.name}`;
+
+            append(li, img);
+            append(li, span);
+            append(ul, li);
         })
 
-        let li = createNode('li'),
-            img = createNode('img'),
-            span = createNode('span');
-
-        img.src = 
     })
 
 
