@@ -15,7 +15,7 @@ fetch(url)
     .then(resp => resp.json())
     .then(data => {
         authors = data.results;
-        console.log(authors);
+        console.log(authors)
         
         authors.map(char => {
             console.log(char.name)
