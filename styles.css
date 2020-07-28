@@ -71,7 +71,8 @@ body ul li img {
 
 .card li:hover {
     background-color: black;
-    transform: rotateY( 180deg );
+    transform: rotateY(180deg) rotate(-5deg) scale(1.2);
+    z-index: 500;
     transition: .5s;
 }
 
