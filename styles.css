@@ -50,3 +50,7 @@ body ul li img {
     transform: rotateY( 180deg );
     transition: transform 0.5s;
 }
+
+.cardFlip {
+    color: black;
+}
