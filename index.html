@@ -22,8 +22,7 @@
 <script>
     function addedFunction() {
       document.getElementById("addCard").innerHTML = "Added!";
-      setTimeout 1000;
-      document.getElementById("addCard").innerHTML = "Add Another Card";
+      setTimeout(function(){ document.getElementById("addCard").innerHTML = "Add Another Card" }, 2000);
     }
 </script>
 
