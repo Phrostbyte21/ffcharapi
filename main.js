@@ -1,6 +1,5 @@
 function createNode(element) {
     return document.createElement(element);
-    element.classList.add("cardFlip");
 }
 
 function append(parent, el) {
@@ -8,7 +7,7 @@ function append(parent, el) {
 }
 
 const url = 'https://www.moogleapi.com/api/v1/characters/?results=30';
-const ul = document.getElementById('ffchars');
+const ul = document.getElementById('ffchars').className = "myclass";
 
 let authors;
 
