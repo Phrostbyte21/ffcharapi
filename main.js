@@ -8,10 +8,15 @@ function append(parent, el) {
 
 const url = 'https://www.moogleapi.com/api/v1/characters/?results=10';
 
+let chars;
+
 fetch(url)
     .then(resp => resp.json())
     .then(data => {
-        console.log(data);
+        chars = data.results;
+        console.log(chars)
+
+        
     })
 
 
