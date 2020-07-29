@@ -93,13 +93,18 @@ button {
     height: 60px;
     margin: 20px;
     transition: .3s;
-    background-image: url("./img/addMoreBtn.png");
+    background-color: rgba(0,0,0,0);
+    color: white;
+    border: 0px;
+    border-radius: 7px;
+    background-image: url(./img/addMoreBtn.png);
 }
 
 button:hover {
-    background-image: url("./img/addMoreBtn.png");
-    transform: scale(1.1);
+    transform: scale(1.05);
     transition: .3s;
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, .5);
+    border-radius: 7px;
 }
 
 button:focus {
