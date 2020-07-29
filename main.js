@@ -11,7 +11,7 @@ function first(array, count = 30) {
 }
 
 function addAuthor(author) {
-        if (author.pictures[0].url == undefined) {
+        if (author.pictures[0].url == null) {
             index += 1;
         } else {
             let li = createNode('li'),
