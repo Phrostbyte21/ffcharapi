@@ -70,7 +70,9 @@ body ul li img:hover {
     justify-content: center;
     color: white;
     border-bottom: 1px solid #afafaf;
-    background: linear-gradient(180deg, rgba(9,66,121,1) 0%, rgba(0,143,255,1) 100%);
+    background-image: url("./img/woodHeader.png");
+    background-repeat: repeat-x;
+    height: 80px;
 }
 
 .card li{
