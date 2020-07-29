@@ -112,7 +112,7 @@ body ul li img:hover {
 }
 
 .card li:hover:nth-child(5n-1) {
-    transform: rotateY(180deg) rotate(-3deg) scale(1.3);
+    transform: rotateY(180deg) rotate(3deg) scale(1.3);
 }
 
 .card li:hover:nth-child(5n-2) {
@@ -120,15 +120,15 @@ body ul li img:hover {
 }
 
 .card li:hover:nth-child(5n-3) {
-    transform: rotateY(180deg) rotate(1deg) scale(1.3);
+    transform: rotateY(180deg) rotate(5deg) scale(1.3);
 }
 
 .card li:hover:nth-child(5n-4) {
-    transform: rotateY(180deg) rotate(3deg) scale(1.3);
+    transform: rotateY(180deg) rotate(1deg) scale(1.3);
 }
 
 .card li:hover:nth-child(5n-5) {
-    transform: rotateY(180deg) rotate(5deg) scale(1.3);
+    transform: rotateY(180deg) rotate(-3deg) scale(1.3);
 }
 
 button {
