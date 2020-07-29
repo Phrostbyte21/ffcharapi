@@ -27,6 +27,12 @@ body ul {
     width: 50%;
 }
 
+@media (max-width: 600px) {
+    .description p {
+        width: 80%;
+    }    
+}
+
 body ul li {
     /* flex-basis: 15%; */
     display: flex;
