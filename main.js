@@ -21,10 +21,12 @@ function addAuthor(author) {
         // append(li, img);
         append(li, span);
         append(ul, li);
+        index += 1;
 }
 
 const url = 'https://www.moogleapi.com/api/v1/characters/';
 const ul = document.getElementById('ffchars');
+let index = 0;
 
 document.getElementById('ffchars').className = "card cardFlip";
 
@@ -41,7 +43,7 @@ fetch(url)
     })
 
 document.getElementById("addCard").addEventListener("click", () => {
-    addAuthor(authors[26]);
+    addAuthor(authors[index]);
     document.getElementById("addCard").innerHTML = "Added!";
     setTimeout(function(){ document.getElementById("addCard").innerHTML = "Add Another Card" }, 2000);
 });
