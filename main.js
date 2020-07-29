@@ -21,16 +21,16 @@ function first(array, count = 30) {
 
 /* Loops through the card draw. If there's no image, it skips 
    that object in the array and goes to the next one.*/
-function addAuthor(author) {
-    if (!author.pictures[0]) {
+function addCard(card) {
+    if (!card.pictures[0]) {
         index ++;
     } else {
         let li = createNode('li'),
         img = createNode('img'),
         span = createNode('span');
 
-        img.src = author.pictures[0].url;
-        span.innerText = `${author.name}\n\nAge: ${author.age}\nGender: ${author.gender}\nRace: ${author.race}\nOrigin: ${author.origin}`;
+        img.src = card.pictures[0].url;
+        span.innerText = `${card.name}\n\nAge: ${card.age}\nGender: ${card.gender}\nRace: ${card.race}\nOrigin: ${card.origin}`;
 
         append(li, img);
         append(li, span);
@@ -48,22 +48,22 @@ let index = 0;
 // Displaying API data in HTML
 document.getElementById('ffchars').className = "card cardFlip";
 
-let authors;
+let cards;
 
 fetch(url)
     .then(resp => resp.json())
     .then(data => {
-        authors = data;
-        console.log(authors)
+        cards = data;
+        console.log(cards)
         
-        first(authors).map(addAuthor)
+        first(cards).map(addCard)
 
     })
 
 /* Functionality for the button at the bottom of the page
    for users to add another card. */
 document.getElementById("addCard").addEventListener("click", () => {
-    addAuthor(authors[index]);
+    addCard(cards[index]);
     document.getElementById("addCard").innerHTML = "Added!";
     setTimeout(function(){ document.getElementById("addCard").innerHTML = "Add Another Card" }, 2000);
 });
