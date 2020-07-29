@@ -21,7 +21,12 @@ function addAuthor(author) {
         append(li, img);
         append(li, span);
         append(ul, li);
-        index += 1;
+        
+        if (author.pictures[0].url == "") {
+            index += 2;
+        } else {
+            index += 1;
+        }       
 }
 
 const url = 'https://www.moogleapi.com/api/v1/characters/';
