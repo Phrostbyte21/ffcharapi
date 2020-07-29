@@ -15,17 +15,10 @@
         <ul class="card" id='ffchars'></ul>
     </div>
     <div style="display: flex; justify-content: center;">
-        <button id="addCard" onclick="addedFunction()")>Add Another Card</button>
+        <button id="addCard">Add Another Card</button>
     </div>
 </body>
 
 
 <script type="module" src="main.js"></script>
-<script>
-    function addedFunction() {
-        addAuthor(authors[26]);
-        document.getElementById("addCard").innerHTML = "Added!";
-        setTimeout(function(){ document.getElementById("addCard").innerHTML = "Add Another Card" }, 2000);
-    }
-</script>
 </html>

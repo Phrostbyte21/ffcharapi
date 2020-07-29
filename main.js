@@ -40,6 +40,12 @@ fetch(url)
 
     })
 
+document.getElementById("addCard").addEventListener("click", () => {
+    addAuthor(authors[26]);
+    document.getElementById("addCard").innerHTML = "Added!";
+    setTimeout(function(){ document.getElementById("addCard").innerHTML = "Add Another Card" }, 2000);
+});
+
 
 
 
