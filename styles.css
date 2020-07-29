@@ -62,21 +62,23 @@ body ul li img:hover {
 
 .card li span {
     transform: rotateY( 180deg );
-    width: 150px;
-    height: 67px;
-    padding-top: 143px;
+    width: 130px;
+    height: 190px;
+    padding: 10px;
     color: white;
-    transition: .6s;
+    transition-delay: .3s;
     opacity: 0;
     border: 0px solid black;
     border-radius: 5px;
     position: absolute;
     line-height: 20px;
+    background-image: url(./img/cardBack.png);
 }
 
 .card li span:hover {
-    transition: .3s;
+    transition-delay: .1s;
     opacity: 1;
+    background-image: url(./img/cardBack.png);
 }
 
 .card li:hover {
