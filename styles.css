@@ -18,6 +18,15 @@ body ul {
     padding-left: 0px;
 }
 
+.description {
+    display: flex;
+    justify-content: center;
+}
+
+.description p {
+    width: 50%;
+}
+
 body ul li {
     /* flex-basis: 15%; */
     display: flex;
