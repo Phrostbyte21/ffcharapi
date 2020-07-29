@@ -12,13 +12,13 @@ function first(array, count = 25) {
 
 function addAuthor(author) {
     let li = createNode('li'),
-            // img = createNode('img'),
+            img = createNode('img'),
             span = createNode('span');
 
-        // img.src = author.pictures[0].url;
+        img.src = author.pictures[0].url;
         span.innerText = `Name: ${author.name} \nGender: ${author.gender} \nJob: ${author.job} \nRace: ${author.race}`;
 
-        // append(li, img);
+        append(li, img);
         append(li, span);
         append(ul, li);
         index += 1;
