@@ -33,6 +33,12 @@ body ul {
     }
   }
 
+  @media only screen and (max-width: 800px) {
+    .description p {
+        width: 70%;
+    }
+  }
+
 body ul li {
     /* flex-basis: 15%; */
     display: flex;
