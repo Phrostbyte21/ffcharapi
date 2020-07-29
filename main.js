@@ -10,6 +10,19 @@ function first(array, count = 25) {
     return array.slice(0, count);
 }
 
+function addAuthor(author) {
+    let li = createNode('li'),
+            img = createNode('img'),
+            span = createNode('span');
+
+        img.src = author.pictures[0].url;
+        span.innerText = `Name: ${author.name} \nGender: ${author.gender} \nJob: ${author.job} \nRace: ${author.race}`;
+
+        append(li, img);
+        append(li, span);
+        append(ul, li);
+}
+
 const url = 'https://www.moogleapi.com/api/v1/characters/';
 const ul = document.getElementById('ffchars');
 
@@ -23,21 +36,9 @@ fetch(url)
         authors = data;
         console.log(authors)
         
-        first(authors).map(author => {
-            let li = createNode('li'),
-                img = createNode('img'),
-                span = createNode('span');
-
-            img.src = author.pictures[0].url;
-            span.innerText = `Name: ${author.name} \nGender: ${author.gender} \nJob: ${author.job} \nRace: ${author.race}`;
-
-            append(li, img);
-            append(li, span);
-            append(ul, li);
-        })
+        first(authors).map(addAuthor)
 
     })
-
 
 
 

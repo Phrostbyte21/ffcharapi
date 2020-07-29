@@ -19,12 +19,13 @@
     </div>
 </body>
 
-<script>
-    function addedFunction() {
-      document.getElementById("addCard").innerHTML = "Added!";
-      setTimeout(function(){ document.getElementById("addCard").innerHTML = "Add Another Card" }, 2000);
-    }
-</script>
 
 <script type="module" src="main.js"></script>
+<script>
+    function addedFunction() {
+        addAuthor(authors[26]);
+        document.getElementById("addCard").innerHTML = "Added!";
+        setTimeout(function(){ document.getElementById("addCard").innerHTML = "Add Another Card" }, 2000);
+    }
+</script>
 </html>
