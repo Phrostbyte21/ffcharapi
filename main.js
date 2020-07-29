@@ -13,7 +13,8 @@ function append(parent, el) {
    skip over array objects if there's no picture. So
    declaring "25" as the count might not actually give
    you 25 cards if in the first 25 array objects some
-   are missing the .pictures data. Keep that in mind.*/
+   are missing the .pictures data. (27 currently generates 
+    25 crads) Keep that in mind.*/
 
 function first(array, count = 27) {
     return array.slice(0, count);
