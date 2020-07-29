@@ -25,6 +25,7 @@ body ul {
 
 .description p {
     width: 50%;
+    margin: 3rem;
 }
 
 @media only screen and (max-width: 750px) {
