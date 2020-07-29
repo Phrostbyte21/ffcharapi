@@ -27,11 +27,11 @@ body ul {
     width: 50%;
 }
 
-@media (max-width: 600px) {
+@media only screen and (max-width: 600px) {
     .description p {
         width: 80%;
-    }    
-}
+    }
+  }
 
 body ul li {
     /* flex-basis: 15%; */
