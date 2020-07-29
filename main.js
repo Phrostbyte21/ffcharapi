@@ -6,7 +6,7 @@ function append(parent, el) {
     return parent.appendChild(el);
 }
 
-function first(array, count = 30) {
+function first(array, count = 25) {
     return array.slice(0, count);
 }
 
