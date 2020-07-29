@@ -110,7 +110,9 @@ body ul li img:hover {
     position: absolute;
     line-height: 20px;
     background-image: url(./img/cardBack.png);
+    user-select: none;
 }
+
 
 .card li span:hover {
     transition-delay: .1s;
