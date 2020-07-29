@@ -130,3 +130,7 @@ button:hover {
 button:focus {
     outline: none;
 }
+
+.cardDiv {
+    min-height: 700px;
+}
