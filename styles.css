@@ -5,6 +5,9 @@ body {
     font-family: 'MedievalSharp', cursive;
 }
 
+h3 {
+    font-family: 'MedievalSharp', cursive;
+}
 body ul {
     display: flex;
     list-style: none;
