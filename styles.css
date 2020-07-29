@@ -27,6 +27,7 @@ body ul li {
     transition: transform 1s;
     width: 150px;
     height: 300px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
 }
 
 body ul li span {
@@ -36,7 +37,10 @@ body ul li span {
 body ul li img {
     margin: 5px;
     border-radius: 3px;
-    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+    min-height: 100px;
+    max-height: 150px;
+    min-width: 50px;
+    max-width: 100px;
 }
 
 .header {
