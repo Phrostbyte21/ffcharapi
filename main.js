@@ -6,13 +6,21 @@ function append(parent, el) {
     return parent.appendChild(el);
 }
 
-// The number of cards to draw on page load
-function first(array, count = 26) {
+/* The number of cards to draw on page load.
+
+   WARNING!!! 
+   Because of the function below this function, it will
+   skip over array objects if there's no picture. So
+   declaring "25" as the count might not actually give
+   you 25 cards if in the first 25 array objects some
+   are missing the .pictures data. Keep that in mind.*/
+
+function first(array, count = 27) {
     return array.slice(0, count);
 }
 
-// Loops through the card draw. If there's no image, it skips 
-// that object in the array and goes to the next one.
+/* Loops through the card draw. If there's no image, it skips 
+   that object in the array and goes to the next one.*/
 function addAuthor(author) {
     if (!author.pictures[0]) {
         index += 1;
@@ -52,8 +60,8 @@ fetch(url)
 
     })
 
-// Functionality for the button at the bottom of the page
-// for users to add another card.
+/* Functionality for the button at the bottom of the page
+   for users to add another card. */
 document.getElementById("addCard").addEventListener("click", () => {
     addAuthor(authors[index]);
     document.getElementById("addCard").innerHTML = "Added!";
