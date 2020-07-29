@@ -60,10 +60,6 @@ body ul li img:hover {
     transition: 1s;
 }
 
-.card li:hover{
-    background-image: url("./img/cardBack.png");
-    transition: .3s;
-}
 .card li span {
     transform: rotateY( 180deg );
     width: 150px;
@@ -84,10 +80,10 @@ body ul li img:hover {
 }
 
 .card li:hover {
-    background-color: black;
     transform: rotateY(180deg) rotate(-5deg) scale(1.3);
     z-index: 500;
     transition: .3s;
+    background-image: url("./img/cardBack.png");
 }
 
 button {
