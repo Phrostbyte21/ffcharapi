@@ -11,20 +11,20 @@ function first(array, count = 30) {
 }
 
 function addAuthor(author) {
-    let li = createNode('li'),
+        if (author.pictures[0].url = undefined) {
+            index += 1;
+        } else {
+            let li = createNode('li'),
             img = createNode('img'),
             span = createNode('span');
 
-        img.src = author.pictures[0].url;
-        span.innerText = `Name: ${author.name} \nGender: ${author.gender} \nJob: ${author.job} \nRace: ${author.race}`;
+            img.src = author.pictures[0].url;
+            span.innerText = `Name: ${author.name} \nGender: ${author.gender} \nJob: ${author.job} \nRace: ${author.race}`;
 
-        append(li, img);
-        append(li, span);
-        append(ul, li);
-        
-        if (author.pictures[0].url == "") {
-            index += 2;
-        } else {
+            append(li, img);
+            append(li, span);
+            append(ul, li);
+
             index += 1;
         }       
 }
