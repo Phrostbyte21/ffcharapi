@@ -20,6 +20,7 @@ body ul li {
     flex-direction: column;
     margin-bottom: 20px;
     align-items: center;
+    justify-content: center;
     margin: 10px 5px;
     transition: transform 1s;
     width: 150px;
@@ -32,12 +33,16 @@ body ul li span {
 }
 
 body ul li img {
-    margin: 5px;
-    border-radius: 3px;
-    min-height: 100px;
-    max-height: 150px;
-    min-width: 50px;
-    max-width: 100px;
+    margin: auto;
+    max-width: 85%;
+    max-height: 85%;
+    min-width: 50%;
+    min-height: 50%;
+}
+
+body ul li img:hover {
+    opacity: 0;
+    transition: .3s;
 }
 
 .header {
