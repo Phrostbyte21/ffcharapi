@@ -27,15 +27,9 @@ body ul {
     width: 50%;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 750px) {
     .description p {
         width: 80%;
-    }
-  }
-
-  @media only screen and (max-width: 800px) {
-    .description p {
-        width: 70%;
     }
   }
 
