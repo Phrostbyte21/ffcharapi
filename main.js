@@ -19,7 +19,7 @@ function addAuthor(author) {
             span = createNode('span');
 
             img.src = author.pictures[0].url;
-            span.innerText = `Name: ${author.name} \nGender: ${author.gender} \nJob: ${author.job} \nRace: ${author.race}`;
+            span.innerText = `${author.name} \nGender: ${author.gender} \nJob: ${author.job}`;
 
             append(li, img);
             append(li, span);

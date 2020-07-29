@@ -57,12 +57,15 @@ body ul li img {
 .card li span {
     transform: rotateY( 180deg );
     width: 150px;
-    height: 210px;
+    height: 67px;
+    padding-top: 143px;
+    color: white;
     transition: .6s;
     opacity: 0;
     border: 0px solid black;
     border-radius: 5px;
     position: absolute;
+    line-height: 20px;
 }
 
 .card li span:hover {
@@ -72,7 +75,7 @@ body ul li img {
 
 .card li:hover {
     background-color: black;
-    transform: rotateY(180deg) rotate(-5deg) scale(1.2);
+    transform: rotateY(180deg) rotate(-5deg) scale(1.3);
     z-index: 500;
     transition: .5s;
 }
