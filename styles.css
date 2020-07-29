@@ -5,6 +5,22 @@ body {
     font-family: 'MedievalSharp', cursive;
 }
 
+h1 {
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.4);
+    color: #261909;
+    font-size: 45px;
+    margin-top: 15px;
+}
+
+@media only screen and (max-width: 750px) {
+    .h1 {
+        text-shadow: 0 1px 0 rgba(255, 255, 255, 0.4);
+        color: #261909;
+        font-size: 30px;
+        margin-top: 25px;
+    }
+  }
+
 h3 {
     font-family: 'MedievalSharp', cursive;
 }
@@ -87,7 +103,7 @@ body ul li img:hover {
     width: 130px;
     height: 190px;
     padding: 10px;
-    color: white;
+    color: black;
     transition-delay: .3s;
     opacity: 0;
     border: 0px solid black;
