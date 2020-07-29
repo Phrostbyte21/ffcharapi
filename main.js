@@ -24,7 +24,7 @@ function first(array, count = 27) {
    that object in the array and goes to the next one.*/
 function addAuthor(author) {
     if (!author.pictures[0]) {
-        index += 2;
+        index ++;
     } else {
         let li = createNode('li'),
         img = createNode('img'),
